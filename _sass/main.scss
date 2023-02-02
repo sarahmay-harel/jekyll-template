@@ -21,6 +21,13 @@ body {
     background-repeat: no-repeat;
 }
 
+.emoji-logo {
+    font-size: 3rem;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 nav {
     padding-top: 1.5rem;
 }
@@ -82,10 +89,14 @@ ul {
     }
 
     .links {
-        height: auto;
+        height: 3rem;
         display: flex;
         justify-content: flex-end;
         text-align: left;
+        align-items: center;
+    }
+    ul {
+        margin-top: 1rem;
     }
 }
 
@@ -115,7 +126,8 @@ a {
     color: white;
 
     &:hover {
-        // text-decoration: none;
+        text-decoration: white wavy underline 2px;
+        text-underline-offset: 5px;
         color: white;
     }
 }
@@ -129,7 +141,7 @@ a {
         color: black;
 
         &:hover {
-            // text-decoration: none;
+            text-decoration: black wavy underline 2px;
             color: black;
         }
     }
@@ -203,12 +215,16 @@ a {
 /* Footer */
 
 footer {
+    font-size: .75rem;
     padding-bottom: 0rem;
     color: white;
 
     & img {
         filter: brightness(0) invert(1);
-
+    }
+    & a:hover {
+        text-decoration: white wavy underline 1.5px;
+        text-underline-offset: 2px;
     }
 }
 
